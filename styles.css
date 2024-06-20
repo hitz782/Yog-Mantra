@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: #567db9;
+    background: #070707;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -25,7 +25,7 @@ header h1 {
     margin: 0;
     padding: 1rem;
     font-family: sans-serif;
-    color: #94d6e2;
+    color: rgb(248, 208, 230);
 }
 
 header nav ul {
@@ -62,7 +62,7 @@ header .logo {
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: #e0e7ff;
+    background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250)); /* Horizontal gradient */
 }
 
 .hero h2 {
@@ -146,8 +146,63 @@ header .logo {
     color: #666;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures the image covers the area without stretching */
+}
+
+.gallery-item.small {
+    height: 150px;
+}
+
+.gallery-item.large {
+    height: 350px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+
 .cta {
-    background: #e0e7ff;
+    background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250)); /* Horizontal gradient */
     text-align: center;
     padding: 50px 0;
 }
@@ -284,12 +339,12 @@ footer.footer-right ul li a{
 
 .about-us-image img {
     width: 100%;
-    opacity: 0.7;
+    opacity: 1;
     transition: opacity 0.5s;
 }
 
 .about-us-image img:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .founders {
