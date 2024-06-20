@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -18,6 +19,7 @@ header .container {
     align-items: center;
     width: 90%;
     margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
 }
 
 header h1 {
@@ -33,6 +35,7 @@ header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
 }
 
 header nav ul li {
@@ -54,15 +57,15 @@ header .btn {
 }
 
 header .logo {
-    width: 100px; /* Adjust the size as needed */
+    width: 100px;
     height: auto;
 }
 
-
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px 0;
-    background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250)); /* Horizontal gradient */
+    padding: 50px 0; /* Adjust padding for smaller screens */
+    background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250));
 }
 
 .hero h2 {
@@ -77,6 +80,7 @@ header .logo {
 .hero .stats {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
     margin: 20px 0;
 }
 
@@ -89,14 +93,17 @@ header .logo {
 .hero .images {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
     margin: 20px 0;
 }
 
 .hero .images img {
-    margin: 0 10px;
+    margin: 10px;
     border-radius: 10px;
+    max-width: 100%; /* Make images responsive */
 }
 
+/* Program Section */
 .program {
     background: #fff;
     padding: 50px 0;
@@ -121,11 +128,12 @@ header .logo {
 .program .program-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
 }
 
 .program .card {
     background: #f0f0f0;
-    margin: 0 10px;
+    margin: 10px;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -146,12 +154,7 @@ header .logo {
     color: #666;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Gallery Section */
 .gallery-container {
     text-align: center;
     margin: 20px;
@@ -160,7 +163,11 @@ header .logo {
 .gallery {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
     gap: 10px;
+}
+.gallery h2 span{
+    color: #6c63ff;
 }
 
 .gallery-column {
@@ -178,7 +185,7 @@ header .logo {
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ensures the image covers the area without stretching */
+    object-fit: cover;
 }
 
 .gallery-item.small {
@@ -201,8 +208,9 @@ header .logo {
     font-size: 1em;
 }
 
+/* Call to Action Section */
 .cta {
-    background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250)); /* Horizontal gradient */
+    background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250));
     text-align: center;
     padding: 50px 0;
 }
@@ -219,15 +227,17 @@ header .logo {
 .cta form {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
     margin: 20px 0;
 }
 
 .cta form input {
     padding: 10px;
-    margin-right: 10px;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 200px;
+    width: calc(100% - 40px); /* Adjust width for mobile */
+    max-width: 400px; /* Limit max width */
 }
 
 .cta form .btn {
@@ -239,6 +249,7 @@ header .logo {
     cursor: pointer;
 }
 
+/* Footer Section */
 footer {
     background: #0c0c0c;
     color: #fff;
@@ -294,14 +305,16 @@ footer .footer-middle ul li {
     margin-bottom: 10px;
 }
 
-footer.footer-right ul li a{
-    text-decoration: none;
-    color: #fff;  
-}
-.footer-right{
+.footer-right {
     color: white;
 }
 
+.footer-right ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* About Us Section */
 .about-us {
     display: flex;
     justify-content: center;
@@ -309,16 +322,21 @@ footer.footer-right ul li a{
     padding: 50px;
     background: #fff;
 }
+.about-us h2 span{
+    color: #6c63ff;
+}
 
 .about-us-content {
     display: flex;
     max-width: 1200px;
     width: 100%;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
 }
 
 .about-us-text {
     flex: 1;
     padding: 20px;
+    text-align: justify;
 }
 
 .about-us-text h2 {
@@ -329,7 +347,6 @@ footer.footer-right ul li a{
 .about-us-text p {
     font-size: 1.2em;
     line-height: 1.6;
-    text-justify: auto;
 }
 
 .about-us-image {
@@ -347,17 +364,26 @@ footer.footer-right ul li a{
     opacity: 0.9;
 }
 
+/* Founders Section */
 .founders {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 50px;
     background: #f5f5f5;
+    flex-wrap: wrap; /* Allow wrapping for mobile */
 }
 
 .founder {
     text-align: center;
     flex-basis: 45%;
+    margin: 10px 0;
+}
+/* .founder h2{
+    text-align: centre;
+} */
+.founder h2 span{
+    color: #6c63ff;
 }
 
 .founder-image {
@@ -368,31 +394,266 @@ footer.footer-right ul li a{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.founder-text h3 {
+.founder h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.founder-text p {
+.founder p {
     font-size: 1.2em;
-    margin: 5px 0;
+    color: #666;
+}
+.founder h2 {
+  position: relative;
+  left: 293px;
+  top: -35px;
+  font-size: 2em;
+}
+.gallery-container h2{
+    font-size: 2em;
 }
 
-/* Additional styles for responsiveness */
+/* Media Queries */
 @media (max-width: 768px) {
-    .about-us-content, .founders {
+    header .container, footer .container {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
     }
 
-    .about-us-image, .founder {
-        flex-basis: 100%;
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .about-us-image img, .founder-image img {
-        width: 80%;
+    header nav ul li {
+        margin: 10px 0;
     }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero .stats {
+        flex-direction: column;
+    }
+
+    .program .program-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us-text, .about-us-image {
+        width: 100%;
+    }
+
+    .founders {
+        flex-direction: column;
+    }
+footer h2 footer h3 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    position: relative;
+    top: -34px;
+    left: 95px;
+  }
 }
+@media (max-width: 480px){
+
+    .container h1 {
+        position: absolute;
+        left: 10px;
+        top: -5px;
+        font-size: 0.9em;
+      }
+    header nav ul {
+            flex-direction: row;
+            position: absolute;
+            top: 4px;          
+            font-size: 9px;
+            left: 105px;
+            justify-content: space-evenly;
+            width: 63%;
+      }
+      header .logo {
+        width: 23px;
+        height: auto;
+        position: are;
+        position: absolute;
+        top: 11px;
+        left: 361px;
+      }
+    .hero .stats {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            width: 114%;
+            font-size: 10px;
+            position: relative;
+            right: 23px;
+    }
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .program h2 {
+        font-size: 1.5em;
+    }
+
+    .program .card {
+        width: 90%;
+    }
+
+    .cta h2 {
+        font-size: 1.5em;
+        position: relative;
+        top: 13px;
+        font-size: 19px;
+      }
+    .cta form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        position: relative;
+        top: -3px;
+        width: 306px;
+        left: 53px;
+      }
+      .cta {
+        background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250));
+        text-align: center;
+        padding: 10px 0 10px 0;
+      }
+
+    .about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background: #fff;
+        position: relative;
+        top: -81px;
+    }
+    .about-us-content {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        flex-wrap: wrap;
+        position: relative;
+        top: -71px;
+    }
+    .about-us-text {
+        flex: 1;
+        padding: 20px;
+        text-align: justify;
+      }
+      .about-us-image img {
+        opacity: 1;
+        transition: opacity 0.5s;
+        position: relative;
+        top: 63px;
+        left: -193px;
+        width: 302%;
+      }
+      .about-us-text h2 {
+        font-size: 1.5em;
+        position: relative;
+        left: 78px;
+      }
+      .about-us-text p {
+        font-size: 1em;
+        position: relative;
+        top: 284px;
+        left: -36px;
+        width: 303%;
+      }
+      .gallery-container {
+        text-align: center;
+        margin: 20px;
+        position: relative;
+        top: 25px;
+      }
+      .gallery-container h2{
+        font-size: 1.5em;
+    }
+      footer {
+        background: #0c0c0c;
+        color: #fff;
+        padding: 40px 0 10px 0;
+        text-align: left;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+      }
+      footer h2 footer h3 {
+        margin: 0 0 20px 0;
+        color: #fff;
+        position: relative;
+        top: -34px;
+        left: 95px;
+      }
+      footer p {
+        color: #ccc;
+        position: relative;
+        top: -31px;
+        left: 10px;
+        width: 101%;
+      }
+    .founder h3 {
+        font-size: 1.2em;
+    }
+
+    .founder p {
+        font-size: 1em;
+    }
+    .founder h2 {
+        position: relative;
+        left: 6px;
+        top: -35px;
+        font-size: 1.5em;
+      }
+    .container h1{
+        position: absolute;
+        left: 10px;
+    }
+    footer h2 {
+        margin: 0 0 20px 0;
+        color: #fff;
+        position: relative;
+        top: -30px;
+        left: 101px;
+      }
+      footer h3 {
+        position: relative;
+        top: -49px;
+         left: 91px;
+      }
+      .social{
+        position: relative;
+        left: 27px;
+      }
+    }
