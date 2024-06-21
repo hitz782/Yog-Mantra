@@ -6,6 +6,9 @@ body {
     box-sizing: border-box;
     background: #f7f7f7;
 }
+html {
+    overflow-x: hidden;
+  }
 
 header {
     background: #070707;
@@ -98,9 +101,9 @@ header .logo {
 }
 
 .hero .images img {
-    margin: 10px;
-    border-radius: 10px;
-    max-width: 100%; /* Make images responsive */
+    margin: 18px;
+  border-radius: 21px;
+  max-width: 41%; /* Make images responsive */
 }
 
 /* Program Section */
@@ -391,8 +394,8 @@ footer .footer-middle ul li {
 }
 
 .founder-image img {
-    width: 150px;
-    height: 150px;
+    width: 134px;
+  height: 152px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -415,6 +418,21 @@ footer .footer-middle ul li {
 .gallery-container h2{
     font-size: 2em;
 }
+.cta form .btn {
+    position: relative;
+    top: 20px;
+    left: 577px;
+    width: 108px;
+  }
+  .cta form input {
+    position: relative;
+    left: 430px;
+  width: 354px;
+}
+.cta form{
+    flex-direction: column;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -473,9 +491,13 @@ footer h2 footer h3 {
     top: -34px;
     left: 95px;
   }
+  .cta form input {
+   position: relative;
+   top: 10px;
+  }
+
 }
 @media (max-width: 480px){
-
     .container h1 {
         position: absolute;
         left: 10px;
@@ -657,3 +679,181 @@ footer h2 footer h3 {
         left: 27px;
       }
     }
+
+    @media (max-width: 360px){
+
+        body, html {
+            width: 360px;
+            height: 800px;
+        }
+        header .logo {
+            width: 23px;
+            height: auto;
+            position: are;
+            position: absolute;
+            top: 10px;
+            left: 328px;
+          }
+
+          .container h1 {
+            position: absolute;
+            left: 3px;
+            top: -5px;
+            font-size: 0.9em;
+          }
+          header nav ul {
+            flex-direction: row;
+            position: absolute;
+            top: 5px;
+            font-size: 9px;
+            left: 102px;
+            justify-content: space-evenly;
+            width: 63%;
+          }
+          .program p {
+            color: #666;
+            margin: 20px 0;
+            font-size: 1.1em;
+            width: 95%;
+            position: relative;
+            left: 11px;
+            top: -14px;
+          }
+          .program .card {
+          padding: 20px 10px 20px 10px;
+          }
+          .about-us-text h2 {
+            font-size: 1.5em;
+            position: relative;
+            left: 64px;
+            width: 130px;
+          }
+          .about-us-image img {
+            position: relative;
+            left: -38px;
+            width: 300px;
+            top: -303px;
+          }
+          .about-us-text p {
+            position: relative;
+            width: 142%;
+            left: -44px;
+            top: 270px;
+          }
+          .about-us {
+            position:relative;
+            top: -56px;
+          }
+          .gallery-container {
+             position:relative;
+             top: -244px;
+          }
+          .founders {
+           position: relative;
+           top: -262px;
+           width: 70%;
+          }
+           .cta{
+           position: relative;
+           top: -292px;
+           width: 100%;
+           }
+           footer {
+            position: absolute;
+            top: 672%;
+            width: 100%;
+          }
+          footer h2 {
+            position: relative;
+            top: -27px;
+            left: 80px;
+            width: 137px;
+          }
+          footer h3 {
+            position: relative;
+            top: -58px;
+              left: 78px;
+              width: 100px;
+          }
+          .social {
+            position: relative;
+            left: 0px;
+            width: 317px;
+          }
+          footer p {
+            position: relative;
+            left: 24px;
+            width: 286px;
+          }
+          footer .footer-left{
+            width: 290px;
+          }
+          .cta form input {
+            position: relative;
+            left: -23px;
+            width: 208px;
+          }
+          .cta form .btn {
+                position: relative;
+                left: -25px;
+          }
+          .hero h2 {
+            font-size: 1.5em;
+            position: relative;
+            top: -32px;
+          }
+          .hero .stats {
+            position: relative;
+            top: -27px;
+            width: 100%;
+            left: 2px;
+          }
+          .hero .images img {
+            margin: 10px;
+            border-radius: 27px;
+            max-width: 93%;
+            position: relative;
+            top: -12px;
+          }
+          .program h2 {
+            font-size: 1.5em;
+            position: relative;
+            top: -43px;
+          }
+          .program .card img {
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+            top: 8px;
+          }
+         header nav ul {
+        font-family: AndrijType;
+          }
+          .caption {
+            width: 279px;
+          }
+          .gallery {
+            max-width: 360px;
+          }
+
+
+            body {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            .program .program-cards {
+               width: 100%;
+        }
+    }
+        
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        
+  /* body{
+    overflow-x: hidden;
+    max-width: 100%;
+
+}  */
