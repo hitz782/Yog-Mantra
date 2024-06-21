@@ -421,14 +421,14 @@ footer .footer-middle ul li {
 .cta form .btn {
     position: relative;
     top: 20px;
-    left: 577px;
+    left: 416px;
     width: 108px;
   }
-  .cta form input {
-    position: relative;
-    left: 430px;
-  width: 354px;
-}
+    .cta form input {
+        position: relative;
+        left: 413px;
+        width: 402px;
+      }
 .cta form{
     flex-direction: column;
 }
@@ -518,8 +518,8 @@ footer h2 footer h3 {
         height: auto;
         position: are;
         position: absolute;
-        top: 11px;
-        left: 361px;
+        top: 10px;
+        left: 421px;
       }
     .hero .stats {
             display: flex;
@@ -527,7 +527,7 @@ footer h2 footer h3 {
             justify-content: center;
             flex-wrap: wrap;
             margin: 20px 0;
-            width: 114%;
+            width: 100%;
             font-size: 10px;
             position: relative;
             right: 23px;
@@ -557,8 +557,13 @@ footer h2 footer h3 {
         margin: 20px 0;
         position: relative;
         top: -3px;
-        width: 306px;
-        left: 53px;
+        width: 287px;
+    left: -333px;
+      }
+      .cta form input {
+        position: relative;
+        top: 10px;
+        width: 100%;
       }
       .cta {
         background: linear-gradient(to right, rgb(248, 208, 230), rgb(158, 236, 250));
@@ -595,7 +600,7 @@ footer h2 footer h3 {
         position: relative;
         top: 63px;
         left: -193px;
-        width: 302%;
+        width: 238%;
       }
       .about-us-text h2 {
         font-size: 1.5em;
@@ -606,8 +611,8 @@ footer h2 footer h3 {
         font-size: 1em;
         position: relative;
         top: 284px;
-        left: -36px;
-        width: 303%;
+        left: -29px;
+    width: 269%;
       }
       .gallery-container {
         text-align: center;
@@ -637,6 +642,7 @@ footer h2 footer h3 {
         position: relative;
         top: -34px;
         left: 95px;
+        width: 100%;
       }
       footer p {
         color: #ccc;
@@ -668,6 +674,8 @@ footer h2 footer h3 {
         position: relative;
         top: -30px;
         left: 101px;
+        width: 100%;
+
       }
       footer h3 {
         position: relative;
@@ -678,6 +686,8 @@ footer h2 footer h3 {
         position: relative;
         left: 27px;
       }
+     
+    
     }
 
     @media (max-width: 360px){
@@ -852,8 +862,8 @@ footer h2 footer h3 {
         }
 
         
-  /* body{
+ html, body{
     overflow-x: hidden;
     max-width: 100%;
 
-}  */
+} 
